@@ -1,0 +1,35 @@
+[
+  {
+    "_id": "WepLV",
+    "name": "Talking Doll",
+    "price": 3466,
+    "labels": ["Doll", "Battery Powered", "Baby"],
+    "createdAt": 1631031801011,
+    "inStock": true
+  },
+  {
+    "_id": "r7we8r",
+    "name": "Bear",
+    "price": 466,
+    "labels": ["On Wheels", "Art"],
+    "createdAt": 1555031801011,
+    "inStock": false
+  },
+  {
+    "_id": "rwerwe",
+    "name": "Ball",
+    "price": 16,
+    "labels": ["Outdoor", "puzzle", "Baby"],
+    "createdAt": 1333031801011,
+    "inStock": false
+  },
+  {
+    "_id": "t7re87t",
+    "name": "Basket",
+    "price": 789,
+    "labels": ["Outdoor", "Battery Powered"],
+    "createdAt": 1631030001011,
+    "inStock": true
+  }
+]
+  
