@@ -67,17 +67,6 @@
     "_id": "D15cH"
   },
   {
-    "name": "Ball-275",
-    "price": 4350,
-    "labels": [
-      "Puzzle",
-      "Puzzle"
-    ],
-    "inStock": false,
-    "createdAt": 1730084842201,
-    "_id": "ZRqSv"
-  },
-  {
     "name": "Ball-277",
     "price": 3102,
     "labels": [
@@ -418,5 +407,16 @@
     "inStock": false,
     "createdAt": 1729898193592,
     "_id": "U5zTj"
+  },
+  {
+    "name": "Ball-964",
+    "price": 2024,
+    "labels": [
+      "Doll",
+      "Doll"
+    ],
+    "inStock": false,
+    "createdAt": 1729579625585,
+    "_id": "xV66H"
   }
 ]
