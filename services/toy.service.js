@@ -25,7 +25,11 @@ function query(filterBy = { txt: '' }) {
                 toys = toys.filter(toy => toy.price <= filterBy.maxPrice)
             }
             if (filterBy.labels !== 'all') {
-                toys = toys.filter(toy => toy.labels.includes(filterBy.labels))
+                toys = toys.filter(toy => {
+                    return filterBy.labels.every(label => toy.labels.includes(label))
+                    // filterBy.labels.some(label => toy.labels.includes(label))
+                    // toy.labels.includes(filterBy.labels)
+                })
             }
             if (filterBy.inStock !== 'all') {
                 toys = toys.filter(toy => {
