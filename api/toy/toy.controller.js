@@ -1,5 +1,6 @@
 import { toyService } from './toy.service.js'
 import { logger } from '../../services/logger.service.js'
+import { userService } from '../user/user.service.js'
 
 export async function getToys(req, res) {
     try {
@@ -30,7 +31,10 @@ export async function getToyById(req, res) {
 }
 
 export async function addToy(req, res) {
+    // const loggedinUser = userService.validateToken(req.cookies.loginToken)
+
     const { loggedinUser } = req
+    if (!loggedinUser.isAdmin) return res.status(401).send('Cannot update toy')
 
     try {
         // const toy = req.body
@@ -51,6 +55,10 @@ export async function addToy(req, res) {
 }
 
 export async function updateToy(req, res) {
+    // const loggedinUser = userService.validateToken(req.cookies.loginToken)
+    const { loggedinUser } = req
+    if (!loggedinUser.isAdmin) return res.status(401).send('Cannot update toy')
+
     try {
         // const toy = req.body
         const toy = {
@@ -68,6 +76,10 @@ export async function updateToy(req, res) {
 }
 
 export async function removeToy(req, res) {
+    // const loggedinUser = userService.validateToken(req.cookies.loginToken)
+    const { loggedinUser } = req
+    if (!loggedinUser.isAdmin) return res.status(401).send('Cannot remove toy')
+
     try {
         const toyId = req.params.id
         const deletedCount = await toyService.remove(toyId)
