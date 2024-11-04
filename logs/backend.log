@@ -119,3 +119,62 @@
 3.11.2024, 21:35:10 - INFO - Server listening on port http://127.0.0.1:3030/
 3.11.2024, 21:35:17 - INFO - Server listening on port http://127.0.0.1:3030/
 3.11.2024, 21:36:12 - INFO - Server listening on port http://127.0.0.1:3030/
+3.11.2024, 21:37:57 - INFO - Server listening on port http://127.0.0.1:3030/
+4.11.2024, 15:34:31 - INFO - Server listening on port http://127.0.0.1:3030/
+4.11.2024, 15:34:46 - INFO - Server listening on port http://127.0.0.1:3030/
+4.11.2024, 15:34:48 - INFO - Server listening on port http://127.0.0.1:3030/
+4.11.2024, 15:34:55 - INFO - Server listening on port http://127.0.0.1:3030/
+4.11.2024, 15:35:03 - INFO - Server listening on port http://127.0.0.1:3030/
+4.11.2024, 22:27:58 - INFO - Server listening on port http://127.0.0.1:3030/
+4.11.2024, 22:38:05 - INFO - server.js loaded...
+4.11.2024, 22:38:05 - INFO - Server listening on port http://127.0.0.1:3030/
+4.11.2024, 22:38:11 - INFO - server.js loaded...
+4.11.2024, 22:38:11 - INFO - Server listening on port http://127.0.0.1:3030/
+4.11.2024, 22:38:18 - INFO - Server listening on port http://127.0.0.1:3030/
+4.11.2024, 22:38:18 - INFO - server.js loaded...
+4.11.2024, 22:38:26 - INFO - Server listening on port http://127.0.0.1:3030/
+4.11.2024, 22:38:26 - INFO - server.js loaded...
+4.11.2024, 22:38:32 - INFO - Req was made | /
+4.11.2024, 22:38:32 - ERROR - cannot find toys | MongoServerError: $regex has to be a string
+4.11.2024, 22:38:32 - ERROR - Failed to get toys | MongoServerError: $regex has to be a string
+4.11.2024, 22:38:40 - INFO - Req was made | /
+4.11.2024, 22:38:40 - ERROR - cannot find toys | MongoServerError: $regex has to be a string
+4.11.2024, 22:38:40 - ERROR - Failed to get toys | MongoServerError: $regex has to be a string
+4.11.2024, 22:39:28 - INFO - server.js loaded...
+4.11.2024, 22:39:29 - INFO - Server listening on port http://127.0.0.1:3030/
+4.11.2024, 22:39:31 - INFO - server.js loaded...
+4.11.2024, 22:39:31 - INFO - Server listening on port http://127.0.0.1:3030/
+4.11.2024, 22:39:35 - INFO - server.js loaded...
+4.11.2024, 22:39:35 - INFO - Server listening on port http://127.0.0.1:3030/
+4.11.2024, 22:39:40 - INFO - Req was made | /
+4.11.2024, 22:39:45 - INFO - Req was made | /
+4.11.2024, 22:40:38 - INFO - server.js loaded...
+4.11.2024, 22:40:38 - INFO - Server listening on port http://127.0.0.1:3030/
+4.11.2024, 22:40:48 - INFO - server.js loaded...
+4.11.2024, 22:40:48 - INFO - Server listening on port http://127.0.0.1:3030/
+4.11.2024, 22:40:56 - INFO - server.js loaded...
+4.11.2024, 22:40:56 - INFO - Server listening on port http://127.0.0.1:3030/
+4.11.2024, 22:41:04 - INFO - Req was made | /
+4.11.2024, 22:43:29 - INFO - Req was made | /
+4.11.2024, 22:43:29 - INFO - Req was made | /
+4.11.2024, 22:43:39 - INFO - Req was made | /
+4.11.2024, 22:43:40 - INFO - Req was made | /
+4.11.2024, 22:43:40 - INFO - Req was made | /
+4.11.2024, 22:43:42 - INFO - Req was made | /
+4.11.2024, 22:43:44 - INFO - Req was made | /
+4.11.2024, 22:44:01 - INFO - Req was made | /
+4.11.2024, 22:44:02 - INFO - Req was made | /
+4.11.2024, 22:45:19 - INFO - server.js loaded...
+4.11.2024, 22:45:20 - INFO - Server listening on port http://127.0.0.1:3030/
+4.11.2024, 22:45:44 - INFO - server.js loaded...
+4.11.2024, 22:45:44 - INFO - Server listening on port http://127.0.0.1:3030/
+4.11.2024, 22:47:02 - INFO - Req was made | /
+4.11.2024, 22:47:07 - INFO - Req was made | /
+4.11.2024, 22:47:25 - INFO - server.js loaded...
+4.11.2024, 22:47:25 - INFO - Server listening on port http://127.0.0.1:3030/
+4.11.2024, 22:47:35 - INFO - Req was made | /
+4.11.2024, 22:48:36 - ERROR - Failed to get toy | TypeError: Cannot read properties of null (reading '_id')
+4.11.2024, 22:48:36 - ERROR - while finding toy 67290703bc492643d7994500 | TypeError: Cannot read properties of null (reading '_id')
+4.11.2024, 22:48:42 - INFO - Req was made | /
+4.11.2024, 22:55:33 - INFO - Server listening on port http://127.0.0.1:3030/
+4.11.2024, 22:55:33 - INFO - server.js loaded...
