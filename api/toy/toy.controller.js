@@ -34,7 +34,7 @@ export async function addToy(req, res) {
     // const loggedinUser = userService.validateToken(req.cookies.loginToken)
 
     const { loggedinUser } = req
-    if (!loggedinUser.isAdmin) return res.status(401).send('Cannot update toy')
+    // if (!loggedinUser.isAdmin) return res.status(401).send('Cannot update toy')
 
     try {
         // const toy = req.body
@@ -56,8 +56,8 @@ export async function addToy(req, res) {
 
 export async function updateToy(req, res) {
     // const loggedinUser = userService.validateToken(req.cookies.loginToken)
-    const { loggedinUser } = req
-    if (!loggedinUser.isAdmin) return res.status(401).send('Cannot update toy')
+    // const { loggedinUser } = req
+    // if (!loggedinUser.isAdmin) return res.status(401).send('Cannot update toy')
 
     try {
         // const toy = req.body
@@ -77,8 +77,8 @@ export async function updateToy(req, res) {
 
 export async function removeToy(req, res) {
     // const loggedinUser = userService.validateToken(req.cookies.loginToken)
-    const { loggedinUser } = req
-    if (!loggedinUser.isAdmin) return res.status(401).send('Cannot remove toy')
+    // const { loggedinUser } = req
+    // if (!loggedinUser.isAdmin) return res.status(401).send('Cannot remove toy')
 
     try {
         const toyId = req.params.id

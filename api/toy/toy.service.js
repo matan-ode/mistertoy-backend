@@ -16,11 +16,12 @@ export const toyService = {
 
 async function query(filterBy = { txt: '' }) {
 	try {
-		const criteria = {
-			name: { $regex: filterBy.txt, $options: 'i' },
-		}
+		const criteria = _buildCriteria(filterBy)
+		// const criteria = {
+		// 	name: { $regex: filterBy.txt, $options: 'i' },
+		// }
 		const collection = await dbService.getCollection('toy')
-		var toys = await collection.find(criteria).toArray()
+		const toys = await collection.find(criteria).toArray()
 		return toys
 	} catch (err) {
 		logger.error('cannot find toys', err)
@@ -43,8 +44,7 @@ async function getById(toyId) {
 async function remove(toyId) {
 	try {
 		const collection = await dbService.getCollection('toy')
-		const { deletedCount } = await collection.deleteOne({ _id: ObjectId.createFromHexString(toyId) })
-        return deletedCount
+		await collection.deleteOne({ _id: ObjectId.createFromHexString(toyId) })
 	} catch (err) {
 		logger.error(`cannot remove toy ${toyId}`, err)
 		throw err
@@ -93,10 +93,34 @@ async function addToyMsg(toyId, msg) {
 async function removeToyMsg(toyId, msgId) {
 	try {
 		const collection = await dbService.getCollection('toy')
-		await collection.updateOne({ _id: ObjectId.createFromHexString(toyId) }, { $pull: { msgs: { id: msgId }}})
+		await collection.updateOne({ _id: ObjectId.createFromHexString(toyId) }, { $pull: { msgs: { id: msgId } } })
 		return msgId
 	} catch (err) {
 		logger.error(`cannot add toy msg ${toyId}`, err)
 		throw err
 	}
+}
+
+function _buildCriteria(filterBy) {
+	const { labels, maxPrice, txt, inStock } = filterBy
+
+	const criteria = {}
+
+	if (txt) {
+		criteria.name = { $regex: txt, $options: 'i' }
+	}
+
+	if (maxPrice) {
+		criteria.price = { $lt: maxPrice }
+	}
+
+	if (labels && labels.length) {
+		criteria.labels = { $in: labels }
+	}
+
+	if (inStock) {
+		criteria.inStock = inStock === 'inStock' ? true : false
+	}
+
+	return criteria
 }
